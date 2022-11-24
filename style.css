@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Horizon';
+    src: url('./assets/fonts/horizon/horizon.otf');
+}
+
+:root {
+    --primary-font: 'Horizon';
+    --primary-color-hsl: hsl(42deg 49% 58%);
+    --primary-color: #c8a960;
+    --primary-background: #000000;
+    --primary-font-color: #ffffff;
+}
+
+* {
+    font-family: var(--primary-font);
+    color: var(--primary-font-color);
+    box-sizing: border-box;
+}
+html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+body {
+    background: var(--primary-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 3vw;
+} 
+
+.interactive-text {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 30%;
+}
+
+.logo {
+    background: url('./assets/squares.svg') no-repeat center;
+    width: 75vw;
+    height: 75vw;
+    margin: 2% 0;
+}
+
+.type-writer {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 2.5s steps(32);
+    margin-bottom: 1%;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}

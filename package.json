@@ -1,0 +1,11 @@
+{
+  "name": "cut-like-diamonds",
+  "version": "1.0.0",
+  "description": "Jewelry and Clothing Brand",
+  "main": "main.js",
+  "scripts": {
+    "start": "browser-sync start --server --files *"
+  },
+  "author": "Javier Ruelas",
+  "license": "ISC"
+}
