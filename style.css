@@ -2,6 +2,10 @@
     font-family: 'Horizon';
     src: url('./assets/fonts/horizon/horizon.otf');
 }
+@font-face {
+    font-family: 'Horizon-Outline';
+    src: url('./assets/fonts/horizon/horizon_outlined.otf');
+}
 
 :root {
     --primary-font: 'Horizon';
@@ -60,6 +64,7 @@ p {
     margin: 0 auto;
     animation: typing 2.5s steps(32);
     margin-bottom: 1%;
+    font-family: 'Horizon-Outline';
 }
 
 @keyframes typing {
